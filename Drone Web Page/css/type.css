@@ -1,0 +1,233 @@
+        #type {
+            position: relative;
+            width: 50%;
+            left: 25%;
+            margin: 100px 0px;
+        }
+        h1{
+            font-size: 2.5em;
+        }
+        #type li{
+            font-size: 1.5em;
+        }
+        .img {
+            width: 100%;
+            position: relative;
+        }
+        #img1 {
+            position: absolute;
+            top: -7.6%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img2 {
+            position: absolute;
+            top: 46.2%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img3 {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img4 {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img5 {
+            position: absolute;
+            top: -7.6%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img6 {
+            position: absolute;
+            top: 46.2%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img7 {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img8 {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img9 {
+            position: absolute;
+            top: -7.6%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img10 {
+            position: absolute;
+            top: 46.2%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img11 {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img12 {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img13 {
+            position: absolute;
+            top: -7.6%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img14 {
+            position: absolute;
+            top: 46.2%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img15 {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        #img16 {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            overflow: hidden;
+        }
+        .ban .desc {
+            display: none;
+        }
+        .ban:hover .desc {
+            display: block;
+            font-size: 11px;
+            letter-spacing:-1px;
+            line-height:140%;
+            padding: 10px 0;
+            background: #111;
+            filter:alpha(opacity=75);
+            opacity:.75;
+            color: #fff;
+            position: absolute;
+            padding: 10px;
+            margin: 0;
+            border-top: 1px solid #999;
+        }
+        .ban:hover .desc strong{
+            color:#00FFFF;
+            display: block;
+            margin-bottom: 5px;
+            font-size:16px;
+            font-weight:bold;
+        }
+        #img1:hover .desc {
+            bottom: 11px;
+            left: 11px;
+            width: 480px;
+        }
+        #img2:hover .desc {
+            bottom: 11px;
+            left: 11px;
+            width: 480px;
+        }
+        #img3:hover .desc {
+            bottom: 363px;
+            width: 267px;
+        }
+        #img4:hover .desc {
+            bottom: 11px;
+            width: 267px;
+        }
+        #img5:hover .desc {
+            bottom: 11px;
+            left: 11px;
+            width: 480px;
+        }
+        #img6:hover .desc {
+            bottom: 11px;
+            left: 11px;
+            width: 480px;
+        }
+        #img7:hover .desc {
+            bottom: 363px;
+            width: 267px;
+        }
+        #img8:hover .desc {
+            bottom: 11px;
+            width: 267px;
+        }
+        #img9:hover .desc {
+            bottom: 11px;
+            left: 11px;
+            width: 480px;
+        }
+        #img10:hover .desc {
+            bottom: 11px;
+            left: 11px;
+            width: 480px;
+        }
+        #img11:hover .desc {
+            bottom: 363px;
+            width: 267px;
+        }
+        #img12:hover .desc {
+            bottom: 11px;
+            width: 267px;
+        }
+        #img13:hover .desc {
+            bottom: 11px;
+            left: 11px;
+            width: 480px;
+        }
+        #img14:hover .desc {
+            bottom: 11px;
+            left: 11px;
+            width: 480px;
+        }
+        #img15:hover .desc {
+            bottom: 363px;
+            width: 267px;
+        }
+        #img16:hover .desc {
+            bottom: 11px;
+            width: 267px;
+        }

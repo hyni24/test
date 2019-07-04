@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Play-Drone</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/drop.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><h2>Play-Drone</h2></a>
+        </div>
+        <div id="navBar">
+            <ul id="nav">
+                <li class="menu"><a href="guide.html">가이드</a>
+                <ul class="hide">
+                    <li><a href="guide.html">드론이란?</a></li>
+                    <li><a href="guide.html#1">FPV란?</a></li>
+                </ul>
+                </li>
+                <li class="menu"><a href="type.html">드론종류</a>
+                <ul class="hide">
+                    <li><a href="type.html">토이급</a></li>
+                    <li><a href="type.html#1">중간급</a></li>
+                    <li><a href="type.html#2">하이엔드급</a></li>
+                    <li><a href="type.html#3">레이싱/FPV</a></li>
+                </ul>
+                </li>
+                <li class="menu"><a href="item.html">장비</a>
+                <ul class="hide">
+                    <li><a href="item.html">카메라</a></li>
+                    <li><a href="item.html#1">베터리/기타</a></li>
+                </ul>
+                </li>
+                <li class="menu"><a href="tip.html">팁</a>
+                <ul class="hide">
+                    <li><a href="tip.html">조종 법</a></li>
+                    <li><a href="tip.html#1">구매 팁</a></li>
+                    <li><a href="tip.html#2">안전가이드</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <article>
+            <div id ="info">
+                
+                <h1 class="h123"></h1>
+                <p>아래 이미지는 드론으로 촬영한 이미지 입니다</p>
+            </div>
+            <div id="banner_wrap">
+                <div class="prev" id="leftBtn">
+                    <img src="im/left.png" class="prev"/>
+                </div>
+                <div id="frame">
+                    <ul id="banner">
+                        <li><a href="#"><img src="im/3.jpg" alt="사진3" class="next"/></a></li>
+                        <li><a href="#"><img src="im/4.jpg" alt="사진4" class="next"/></a></li>
+                        <li><a href="#"><img src="im/1.jpg" alt="사진1" class="next"/></a></li>
+                    </ul>
+                </div>
+                <div class="next" id="rightBtn">
+                    <img src="im/right.png" class="next"/>
+                </div>
+            </div>
+        </article>
+        <aside>
+        </aside>
+    </section>
+    <footer>
+        <div id ="foot">
+            <p>Copyright © 2018 By 이성현 All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(function(){
+            $(".menu>a").mouseover(function(){
+                $(this).next("ul").slideDown();
+            });
+            $(".menu").mouseleave(function(){
+                $(".menu>a").next("ul").slideUp();
+            });
+            
+            $("body").css({"cursor":"url(im/cur.png),auto"});
+            $(".menu a").css({"cursor":"url(im/curr.png),auto"});
+            $("#logo a").css({"cursor":"url(im/curr.png),auto"});
+            $(".next").css({"cursor":"url(im/curr.png),auto"});
+            $(".prev").css({"cursor":"url(im/curr.png),auto"});
+            var list=$("#banner");//<ul id="banner">를 list 변수에 참조시켰습니다.
+            var show_num=1; //프레임에 사진 노출될 개수
+            var num=0; //이전, 다음 버튼 클릭할 때 증감되는 값
+            var total=$(">li",list).size(); //총 <li>의 개수 5가 저장됨
+            var li_width=$("li:first",list).width(); //<li>의 너비 값을 저장
+
+            var copyObj=$(">li:lt("+show_num+")",list).clone(); 
+            list.append(copyObj);
+
+              //① 다음 버튼을 클릭할 때 마다 이벤트 핸들러를 실행합니다.
+            $(".next").on("click",function(){
+            if(num==total){ //num 값이 5일 경우 조건문 실행합니다.
+                num=0;
+                list.css("margin-left",num);
+            }
+            num++; //num에 값을 1씩 증가시킵니다.
+            list.stop().animate({marginLeft:-li_width*num+"px"},500)
+                return false;
+            });
+
+              //② 이전 버튼을 클릭할 때 마다 이벤트 핸들러를 실행합니다.
+            $(".prev").on("click",function(){ 
+                if(num==0){  //num 값이 0일 경우 조건문 실행합니다.
+                    num=total;
+                    list.css("margin-left",-num*li_width+"px");
+                }
+                num--;  //num에 값을 1씩 감소됩니다.
+                list.stop().animate({marginLeft:-li_width*num+"px"},500);
+                return false;
+            });
+        });
+        function changeText(cont1,cont2,speed){
+            var Otext="Welcome to Play-Drone!!";
+            var Ocontent=Otext.split("");
+            var i=0;
+            function show(){
+                if(i<Ocontent.length)
+                {		
+                    cont2.append(Ocontent[i]);
+                    i++;
+                };
+            };
+                var Otimer=setInterval(show,speed);	
+        };
+        changeText($("h1"),$(".h123"),100);
+        clearInterval(Otimer);
+    </script>
+</body>
+</html>

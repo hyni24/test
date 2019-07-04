@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Play-Drone</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/drop.css" type="text/css">
+    <style type="text/css">
+        #tip {
+            position: relative;
+            width: 50%;
+            left: 25%;
+            margin: 100px 0px;
+        }
+        h1{
+            font-size: 2.5em;
+        }
+        #img1 {
+            width: 700px;
+            height: 300px;
+            background: url(im/mode.png) no-repeat center;
+            margin: 10%;
+        }
+        #dji {
+            width: 700px;
+            height: 300px;
+            background: url(im/dji.jpg) no-repeat center;
+            margin: 10%;
+        }
+        #parrot {
+            width: 700px;
+            height: 300px;
+            background: url(im/parrot.jpg) no-repeat center;
+            margin: 10%;
+        }
+        #syma {
+            width: 700px;
+            height: 300px;
+            background: url(im/syma.jpg) no-repeat center;
+            margin: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><h2>Play-Drone</h2></a>
+        </div>
+        <div id="navBar">
+            <ul id="nav">
+                <li class="menu"><a href="guide.html">가이드</a>
+                <ul class="hide">
+                    <li><a href="guide.html">드론이란?</a></li>
+                    <li><a href="guide.html#target7">FPV란?</a></li>
+                </ul>
+                </li>
+                <li class="menu"><a href="type.html">드론종류</a>
+                <ul class="hide">
+                    <li><a href="type.html">토이급</a></li>
+                    <li><a href="type.html#target4">중간급</a></li>
+                    <li><a href="type.html#target5">하이엔드급</a></li>
+                    <li><a href="type.html#target6">레이싱/FPV</a></li>
+                </ul>
+                </li>
+                <li class="menu"><a href="item.html">장비</a>
+                <ul class="hide">
+                    <li><a href="item.html">카메라</a></li>
+                    <li><a href="item.html#target3">베터리/기타</a></li>
+                </ul>
+                </li>
+                <li class="menu"><a href="tip.html">팁</a>
+                <ul class="hide">
+                    <li><a href="tip.html">조종 법</a></li>
+                    <li><a href="#target1" class="scroll">구매 팁</a></li>
+                    <li><a href="#target2" class="scroll">안전가이드</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <article>
+            <div id="tip">
+                <div id="mode">
+                    <h1>"어떻게 날리는 거지??"</h1>
+                    <div id="img1">
+                    </div>
+                    <p>조종기에는 스틱 조작 방식에 따라 Mode 1과 Mode 2가 있습니다. Mode 1의 경우 과거에 많이 쓰이던 방식이고, 현재는 대부분 Mode 2 방식을 사용합니다.</p>
+                    <ul>
+                        <li>Mannual : 수동 모드로 사용자가 모든 것을 조종해야 하는 모드입니다. '고감도'와 '저감도'로 나누어 집니다. 저가용 드론은 이 모드만 가지고 있습니다</li>
+                        <li>Attitude : 고도를 유지 시켜주는 모드로, 사용자가 조종을 하지 않아도 고도는 유지됩니다</li>
+                        <li>GPS : GPS를 통해 드론의 고도와 위치를 지정할 수 있는 모드로 가장 조종이 쉽습니다.</li>
+                    </ul>
+                </div>
+                <a id="target1"></a>
+                <div id="buy">
+                    <h1>"대체 드론을 어디서 사야 하는 거야?"</h1>
+                    <p>드론을 처음 구매하실 분들 이라면 한번쯤 위와 같은 고민을 해보셨을 겁니다. 이 고민을 해결하는 방법 중 하나가 드론 제조사의 특징을 이해하는 것인데요. 어떤 회사에서 어떤 성격의 드론을 만드는지 알면 본인의 필요에 따라 탐색 범위를 좁힐 수 있습니다.</p>
+                    <p>대표적인 3개의 제조사로는<span>DJI, 패럿(Parrot), 시마(Syma)</span>가 있습니다</p>
+                    <div id="dji">
+                    </div>
+                    <h3>'DJI'</h3>
+                    <p>말이 필요 없는 세계 최대의 드론 제조사 입니다. '드론계의 애플'로 불리면 중국 기업에 대한 모든 편견을 불식시킨 장본인이죠. DJI드론의 특징은 저가형 모델이 없다는 것입니다. 최근'보급형'딱지를 달고 나온 팬텀3 스탠다드도 100만원대 이니 말 다했죠. 가격이 비싼 만큼 성능 또한 뛰어난데요. DJI드론은 앞 조종법 에서 말한 GPS 기능을 탑재하고 있어 드론이 '너무 쉬워서 재미가 없다'는 말이 나올정도로 안정적입니다. 주요 기종으로는 팬텀(Phantom), 인스파이어(Inspire)등이 있습니다.</p>
+                    <div id="parrot">
+                    </div>
+                    <h3>'패럿(Parrot)'</h3>
+                    <p>프랑스의 자존심이자 오늘 소개하는 기업 중 가장 오랜 역사를 자랑하는 제조사 입니다. 패럿 드론의 가장 큰 특징은 조종기가 없다는 점입니다. 모든 기종이 '프리플라이트'라는 스마트폰 앱을 통해 조종되기 때문인데요. 직관적인 인터페이스 덕분에 조종이 정말 쉽습니다. 드론에 익숙하지 않은 분들도 조종을 금방 익힐 수 있죠. 그리고 앙증맞은 디자인과 뛰어난 색감을 자랑하죠! 주요 기종으로는 비밥(Bebop), 롤링스파이더(Rolling spider) 등이 있습니다.</p>
+                    <div id="syma">
+                    </div>
+                    <h3>'시마(Syma)'</h3>
+                    <p>'국민드론'X5C를 만들어낸 회사입니다. 시마드론의 장점은 '싸다!!!' 입니다 가격이 싸기 때문에 부담없이 날릴 수 있고 그러다 보니 드론 입문자들에게 많은 사랑을 받고 있습니다. 드론 애호가들 중에 절반 이상은 시마 드론으로 시작했거나 시마 드론을 날려 봤을 거라소 생각됩니다. 전반적으로 촬영 기능이 아쉽긴 하지만 가격을 생각하면 충분히 이해가 되는 부분입니다. 주요 기증으로는 X5C, X8C 등이 있습니다.</p>
+                </div>
+                <a id="target2"></a>
+                <div>
+                    <h1>"드론초보가 많이 하는 실수 Best 3!"</h1>
+                    <h3>'프로펠러가 도는데 드론이 뜨지 않아요!'</h3>
+                    <p>똑같아 보이는 프로펠러지만 자기의 자리가 있고, 알맞은 자리는 메뉴얼에 다 나와 있죠. 프로펠러를 장착하기 전에 메뉴얼을 꼭 확인하세요. 요즘에는 사용자의 혼란을 막기 위해 아예 다른 색깔로 구분해 놓은 제품도 있습니다.</p>
+                    <h3>'베터리가 부풀었어요!'</h3>
+                    <p>대부분의 드론이 리튬 폴리머 전지를 사용합니다. 리튬 폴리머 전지는 리튬 이온 전지에 비해 성능은 좋은데 보관이 까다롭죠. 특히 주의해야 할 것이 '배부름 현상'입니다. 베터리가 부풀게 되면 성능이 급격히 저하됩니다. 사고를 막기 위해서는 배부른 베터리는 사용하지 않는 것을 권장하구요. 베터리가 부푸는 이유는 베터리를 완충 상태로 보관, 뜨거운 곳에 보관, 베터리 출력을 무리하게 끌어쓰면 배가 부를 수 있습니다. 주의하시면 좋을 것 같네요~</p>
+                    <h3>'모터가 고장 났어요!'</h3>
+                    <p>모터가 고정나는 가장 흔한 원인은 과열입니다. 초보 분들은 추가 베터리를 5~6개 사다놓고 쉼 없이 계속 날립니다. 전력을 공급하는 베터리와 별개로 모터는 계속해서 돕니다. 모터에게는 휴식이 필요해요. 기계 장치는 기본적으로 열을 받으면 성능이 저하되죠. 하지만 드론에는 이렇다 할 냉각장치가 없어요. 유일한 방법은 휴식입니다.</p>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <div id="up">
+                <img src="im/up.png" width="70px" height="70px" id="im">
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <div id ="foot">
+            <p>Copyright © 2018 By 이성현 All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(function(){
+            $(".menu>a").mouseover(function(){ //드롭다운
+                $(this).next("ul").slideDown();
+            });
+            $(".menu").mouseleave(function(){
+                $(".menu>a").next("ul").slideUp();
+            });
+            
+            $(window).scroll(function() { //새로고침
+                if ($(this).scrollTop() > 100) {
+                    $("#up").fadeIn();
+                } else {
+                    $("#up").fadeOut();
+                }
+            });
+            $("#up").click(function() {
+                $("html, body").animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+            
+            $(".scroll").click(function(event){ //부드럽게 타겟 이동
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+            });
+            
+            $("body").css({"cursor":"url(im/cur.png),auto"}); //마우스커서
+            $(".menu a").css({"cursor":"url(im/curr.png),auto"});
+            $("#logo a").css({"cursor":"url(im/curr.png),auto"});
+            $("#up").css({"cursor":"url(im/curr.png),auto"});
+        });
+    </script>
+</body>
+</html>

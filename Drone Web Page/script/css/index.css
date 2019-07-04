@@ -1,0 +1,53 @@
+        *{margin: 0;padding: 0;}
+        #info {
+            height: 100px;
+        }
+        #info h1{
+            text-align: center;
+            font-size: 3em;
+        }
+        #info p{
+            text-align: center;
+            font-size: 1.5em;
+        }
+        #logo{
+            margin: 50px 48px;
+        }
+        img{
+            border:none;
+            vertical-align:top;
+        }
+        #banner li{
+            list-style:none;
+            float:left;
+            width:1080px;
+        }
+        #banner_wrap{
+            width:1200px;
+            height: 650px;
+            padding:10px 20px;
+            margin:0 auto;
+        }
+        #banner{
+            width:5000px;
+        }
+        #frame{
+            width:1080px;
+            height:600px;
+            overflow:hidden;
+            position:relative;
+            margin:10px auto;
+        }
+        #leftBtn{
+            position: absolute;
+            top: 65%;
+            left: 10%;
+        }
+        #rightBtn{
+            position: absolute;
+            top : 65%;
+            right: 10%;
+        }
+        #foot {
+            margin-bottom: 20px;
+        }

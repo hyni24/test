@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Play-Drone</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/drop.css" type="text/css">
+    <link rel="stylesheet" href="css/type.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><h2>Play-Drone</h2></a>
+        </div>
+        <div id="navBar">
+            <ul id="nav">
+                <li class="menu"><a href="guide.html">가이드</a>
+                <ul class="hide">
+                    <li><a href="guide.html">드론이란?</a></li>
+                    <li><a href="guide.html#target7">FPV란?</a></li>
+                </ul>
+                </li>
+                <li class="menu"><a href="type.html">드론종류</a>
+                <ul class="hide">
+                    <li><a href="type.html">토이급</a></li>
+                    <li><a href="#target4" class="scroll">중간급</a></li>
+                    <li><a href="#target5" class="scroll">하이엔드급</a></li>
+                    <li><a href="#target6" class="scroll">레이싱/FPV</a></li>
+                </ul>
+                </li>
+                <li class="menu"><a href="item.html">장비</a>
+                <ul class="hide">
+                    <li><a href="item.html">카메라</a></li>
+                    <li><a href="item.html#target3">베터리/기타</a></li>
+                </ul>
+                </li>
+                <li class="menu"><a href="tip.html">팁</a>
+                <ul class="hide">
+                    <li><a href="tip.html">조종 법</a></li>
+                    <li><a href="tip.html#target1">구매 팁</a></li>
+                    <li><a href="tip.html#target2">안전가이드</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <article>
+            <div id="type">
+                <div id="Ttype1">
+                    <h1>토이급 드론</h1>
+                    <ul>
+                        <li>예산 : 3~20만원</li>
+                        <li>비행거리 : 30~300m</li>
+                        <li>비행시간 : 5~10분</li>
+                        <li>카메라 : 30만~200만 화소 (480p~1080p)</li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <div id="img1" class="ban">
+                        <img src="im/jjrc.jpg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>JJRC H12C [중형]</strong><br>
+                            X5C를 바짝 쫓고있는 오렌지색 매력적인 드론<br>가격 : 5~7만원선
+                        </span>
+                    </div>
+                    <div id="img2" class="ban">
+                        <img src="im/galaxy.jpg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>갤럭시비지터6 [중형]</strong><br>
+                            국내에서 인기인 저가형 FPV가능 드론<br>가격 : 20만원선
+                        </span>
+                    </div>
+                    <div id="img3" class="ban">
+                        <img src="im/x5c.jpg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>SYMA X5C [중형]</strong><br>
+                            대륙의 실수중 꼽히는 국민드론<br>가격 : 5~6만원선
+                        </span>
+                    </div>
+                    <div id="img4" class="ban">
+                        <img src="im/roll.jpeg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>Parrot 롤링스파이더 [소형]</strong><br>
+                            Wifi FPV, 스파트폰조종이 가능한 소형 드론<br> 가격 : 9만원선
+                        </span>
+                    </div>
+                </div>
+                <a id="target4"></a>
+                <div id="Mtype1">
+                    <h1>중간급 드론</h1>
+                    <ul>
+                        <li>예산 : 30~70만원</li>
+                        <li>비행거리 : 300m~2km</li>
+                        <li>비행시간 : 10~25분</li>
+                        <li>카메라 : 720~1080p</li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <div id="img5" class="ban">
+                        <img src="im/pen2.jpg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>DJI 팬텀2</strong><br>
+                            DJI 팬텀 시리즈의 초기형 드론<br>가격 : 65만원선 (카메라 미포함)
+                        </span>
+                    </div>
+                    <div id="img6" class="ban">
+                        <img src="im/ar.jpg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>Parrot ar.drone</strong><br>
+                            남들보다 단단한 기체가 특징이며 GPS 기능이 포함된 드론<br>가격 : 50만원선
+                        </span>
+                    </div>
+                    <div id="img7" class="ban">
+                        <img src="im/X380.JPG" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>XK-X380</strong><br>
+                            촬영용 드론중 상위급을 누리고 있는 드론<br>가격 : 46만원선
+                        </span>
+                    </div>
+                    <div id="img8" class="ban">
+                        <img src="im/bibap.jpg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>Parrot 비밥</strong><br>
+                            조이스틱 조종이 가능하고 기체가 매력적인 드론<br>가격 : 70만원선
+                        </span>
+                    </div>
+                </div>
+                <a id="target5"></a>
+                <div id="Htype1">
+                    <h1>하이엔드급 드론</h1>
+                    <ul>
+                        <li>예산 : 100~250만원</li>
+                        <li>비행거리 : 1~2km(스펙상 최대 8km도 있음)</li>
+                        <li>비행시간 : 20~25분</li>
+                        <li>카메라 : 1000만 화소이상 (1080p~4k)</li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <div id="img9" class="ban">
+                        <img src="im/3dr.png" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>3DR solo</strong><br>
+                            출시되지 얼마 되지않았으며 고프로만을 위해 만들어진 드론<br>가격 : 200만원선 (카메라 미포함)
+                        </span>
+                    </div>
+                    <div id="img10" class="ban">
+                        <img src="im/q500.jpg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>Yuneec Typhoon Q500</strong><br>
+                            팬텀3를 능가하는 드론 팬텀에는 없는 팔로미 기능을 지원<br>가격 : 173만원선
+                        </span>
+                    </div>
+                    <div id="img11" class="ban">
+                        <img src="im/pen3.png" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>DJI 팬텀3</strong><br>
+                            부자들의 국민드론 현재는 팬텀4까지 출시된 상태<br>가격 : 111~175만원선
+                        </span>
+                    </div>
+                    <div id="img12" class="ban">
+                        <img src="im/pen4.jpg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>DJI Inspire 1</strong><br>
+                            촬영만을 위해 나온 드론 드라마/영화 촬영시 쓰임<br>가격 : 380만원선
+                        </span>
+                    </div>
+                </div>
+                <a id="target6"></a>
+                <div id="Ltype1">
+                    <h1>레이싱/FPV용 드론</h1>
+                    <ul>
+                        <li>예산 : 20~150만원</li>
+                        <li>비행거리 : 조립에 따라</li>
+                        <li>비행시간 : 조립에 따라</li>
+                        <li>카메라 : 조립에 따라</li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <div id="img13" class="ban">
+                        <img src="im/galaxy.jpg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>갤럭시비지터6 [FPV]</strong><br>
+                            앞에서 말했듯이 FPV를 처음 접하기에 좋은 드론<br>가격 : 20만원선
+                        </span>
+                    </div>
+                    <div id="img14" class="ban">
+                        <img src="im/storm.jpg" width="300px" height="200px">
+                        <span class="desc">
+                            <strong>strom drone6 [Racing]</strong><br>
+                            스톰에서 만든 레이싱 드론 기능을 추가하여 성능향상 가능<br>가격 : ??
+                        </span>
+                    </div>
+                    <div id="img15" class="ban">
+                        <img src="im/v686.jpg" width="300px" height="300px">
+                        <span class="desc">
+                            <strong>Wltoys V686 [FPV]</strong><br>
+                            국내에 매장을 두고있는 저가형 FPV용 드론<br>가격 : 12만원선
+                        </span>
+                    </div>
+                    <div id="img16" class="ban">
+                        <img src="im/r250.jpg" width="300px" height="200px">
+                        <span class="desc">
+                            <strong>Waliera Runner 250 [Racing]</strong><br>
+                            레이싱용 드론 기능을 추가하여 성능향상 가능<br>가격 : ??
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <div id="up">
+                <img src="im/up.png" width="70px" height="70px">
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <div id ="foot">
+            <p>Copyright © 2018 By 이성현 All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(function(){
+            $(".menu>a").mouseover(function(){
+                $(this).next("ul").slideDown();
+            });
+            $(".menu").mouseleave(function(){
+                $(".menu>a").next("ul").slideUp();
+            });
+            
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $("#up").fadeIn();
+                } else {
+                    $("#up").fadeOut();
+                }
+            });
+            $("#up").click(function() {
+                $("html, body").animate({
+                    scrollTop : 0
+                }, 400);
+                return false;
+            });
+            
+            $(".scroll").click(function(event){ //부드럽게 타겟 이동
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+            });
+            
+            $("body").css({"cursor":"url(im/cur.png),auto"});
+            $(".menu a").css({"cursor":"url(im/curr.png),auto"});
+            $("#logo a").css({"cursor":"url(im/curr.png),auto"});
+            $("#up").css({"cursor":"url(im/curr.png),auto"});
+            $(".ban").css({"cursor":"url(im/curr.png),auto"});
+        });
+    </script>
+</body>
+</html>

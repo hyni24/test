@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+        body {
+            font-family: 'Nanum Gothic Coding', monospace;
+        }
+        #logo {
+            height: 150px;
+            width: 350px;
+            margin: 30px 40px;
+
+        }
+        #logo a{
+            color: aqua;
+            text-decoration: none;
+            text-align: center;
+            font-size: 40px;
+            text-shadow: -1px -1px 0px #2196f3, 3px 3px 0px #2196f3, 6px 6px 0px #0d47a1;
+
+        }
+        .menu .hide{
+            display:none;
+        }
+        #nav {
+            position: absolute;
+            top: 50px;
+            left: 28%;
+            height: 70px;
+            width: 1000px;
+            padding: 6px 7px;
+            margin: 0;
+            border-radius: 1em;
+            list-style-type: none;
+            background: linear-gradient(to bottom, #00ccff 0%,#0080ff 100%);
+        }
+        #nav li{
+            float : left;
+            list-style: none;
+            position: relative;
+        }
+        #nav > li{
+            margin: 5px 70px;
+            padding: 10px;
+        }
+        #nav li:hover {
+            background-color:lightcyan;
+        }
+        #nav li:hover>a {
+            color: royalblue;
+        }
+        #nav a {
+            display: block;
+            font-weight: bolder;
+            font-size: 1.0em;
+            padding: 10px 20px;
+            color:darkblue;
+            text-decoration: none;
+            margin: 0;
+        }
+        #nav ul {
+          background: lightcyan;
+          border: 1px solid silver;
+          display: none;
+          padding: 0;
+          position: absolute;
+          left: 0;
+          top: 100%;
+          width: 180px;
+        }
+        #nav ul a{
+            color: royalblue;
+        }
+        #nav ul li {
+            float: none;
+        }
+        #nav ul li:hover {
+            background: #0078ff;
+        }
+        #nav ul li:hover a{
+            color: white;
+        }
+        #foot {
+            text-align: center;
+        }
+        #up{
+            position: fixed;
+            right: 10%;
+            bottom: 50px;
+            display: none;
+            z-index: 999;
+        }
